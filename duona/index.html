@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<title>多拿网</title>
+		<link href="css/index.css" type="text/css" rel="stylesheet"/>
+		<link href="style/style.css" type="text/css" rel="stylesheet"/>
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="js/url.js" ></script>
+		<script src="http://webapi.amap.com/maps?v=1.3&key=2b6e308eba18901492e908f5f9af1b99"></script>
+		
+		<style type="text/css">
+			#seaCtbox_F{
+				position: relative;
+			}
+			.seaCtbox{
+				width: 300px;
+				height: 100px;
+				background-color: white;
+				border: 1px solid #ccc;
+				position: absolute;
+				z-index: 99999;
+				left: 520px;
+				display: none;
+				overflow: auto;
+			}
+			.seaCtbox ul{
+				width: 100%;
+				height: 100px;
+			}
+			.seaCtbox ul li{
+				width: 100%;
+			}
+			.seaCtbox ul li a{
+				display: block;
+				width: 100%;
+				text-align: left;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="life_ad">
+			<a href="javascript:;"><img src="img/life/life_ad.gif"></a>
+		</div>
+		<header class="life_t">
+			<ul id="url">
+				<li>[<a href="html/denglu.html">登录</a>]</li>
+				<li>[<a href="html/zhuce.html">注册</a>]</li>
+				<li><a href="##"></a></li>
+			</ul>
+			<ol>
+				<li><a href="javascript:;">我的多拿</a></li>
+				<li class="life_shop"><a href="html/gouwuche.html">购物车</a></li>
+				<li class="life_col"><a href="javascript:;">收藏多拿</a></li>
+				<li><a href="javascript:;">入驻多拿</a></li>
+				<li><a href="javascript:;">帮助</a></li>
+			</ol>
+		</header>
+		<div class="life_search">
+			<img src="img/life/life_logo_l.gif" alt="多拿网">
+			<div class="life_search_c">
+				<p class="life_search_c_t">
+					<input type="text" name="life_search" placeholder="Hello World!" id="seaCtbox_F">
+					<a href="javascript:;" class="life_search_a"></a>
+				</p>
+				<div class="seaCtbox">
+					<ul></ul>
+				</div>
+				<p class="life_search_c_b">
+					<a href="javascript:;" style="margin-left:22%;">LEVEL.A发廊</a>
+					<a href="javascript:;" style="color:red;">奈莉尔美容院</a>
+					<a href="javascript:;">花之生活馆</a>
+				</p>
+			</div>
+			<img src="img/life/life_logo_r.png" alt="多拿网" class="life_search_i_r">
+		</div>
+		
+		<div id="nav">
+			<ul>
+				<li class="li1"><a href="javascript:;">全部代金券<span class="caret"></span></a></li>
+				<li class="clear_l"><a href="index.html" style="color: #de1d0e;background: #fff;border-radius:15px">首页</a></li>
+				<li><a href="html/tasty.html">餐饮美食</a></li>
+				<li><a href="html/content.html">休闲娱乐</a></li>
+				<li><a href="html/bodybuilding.html">美容保健</a></li>
+				<li class="clear_r"><a href="html/life.html">生活服务</a></li>
+			</ul>
+			<img src="img/lr/monkey.png"/>
+		</div>
+		<div id="all">
+			<div id="main">
+				<div id="content_banner">
+					<ul class="u1">
+						<li class="li1">
+							<a href="javascript:;"><span>餐饮美食</span></a>
+							<a href="javascript:;">小吃快餐</a>、
+							<a href="javascript:;" class="red">蛋糕甜品</a>、<br />
+							<a href="javascript:;">西餐</a>、
+							<a href="javascript:;" class="red">日韩料理</a>、<a href="javascript:;">地方<br />菜</a>、
+							<a href="javascript:;" class="red">海鲜</a>、<a href="javascript:;">烧烤</a>
+						</li>
+						<li class="li2">
+							<a href="javascript:;"><span>休闲娱乐</span></a>
+							<a href="javascript:;">景点/郊游</a>、
+							<a href="javascript:;" class="red">摄影</a>、
+							<a href="javascript:;">运<br />动健身</a>、
+							<a href="javascript:;" class="red">棋牌</a>、<a href="javascript:;">桌球</a><br />、
+							<a href="javascript:;" class="red">酒店</a>
+						</li>
+						<li class="li3">
+							<a href="javascript:;"><span>美容保健</span></a>
+							<a href="javascript:;">美发</a>、
+							<a href="javascript:;" class="red">化妆品</a>、
+							<a href="javascript:;">瑜伽</a><br />、
+							<a href="javascript:;" class="red">养生健身</a>、<a href="javascript:;">美甲</a>、<br />
+							<a href="javascript:;" class="red">美容spa</a>、<a href="javascript:;">足疗按摩</a>
+						</li>
+						<li class="li4">
+							<a href="javascript:;"><span>生活服务</span></a>
+							<a href="javascript:;">汽车养护</a>、
+							<a href="javascript:;" class="red">健康护理</a>、<br />
+							<a href="javascript:;">服装箱包</a>、
+							<a href="javascript:;" class="red">电子产品</a>
+						</li>
+					</ul>
+					<div id="banner">
+						<span id="prev"><</span>
+						<ul id="u2">
+							<li><a href="javascript:;"><img src="img/main/1.jpg" /></a></li>
+							<li><a href="javascript:;"><img src="img/main/2.jpg" /></a></li>
+							<li><a href="javascript:;"><img src="img/main/3.jpg" /></a></li>
+						</ul>
+						<span id="next">></span>
+					</div>
+				</div>
+				<script type="text/javascript">
+					var oClone = $("#u2 li").eq(0).clone();
+				    $("#u2").append(oClone);
+				    var oSize = $("#u2 li").size();
+				    var index = 0;
+				    function tim(){
+				    	index++;
+				    	if(index > 3){
+				    		$("#u2").css("left",0);
+				    		index = 1;
+				    	}
+				    	$("#u2").stop().animate({"left":-($("#u2 img").eq(0).width())*index},2000);
+				    }
+					var timer = setInterval(tim,3000);
+					$("#banner").mouseover(function(){
+						clearInterval(timer);
+					});
+					$("#banner").mouseout(function(){
+						timer = setInterval(tim,3000);
+					});
+				    $("#next").click(function(){
+				    	tim();
+				    });
+				    $("#prev").click(function(){
+				    	index--;
+				    	if(index == -1){
+				    		$("#u2").css("left",-($("#u2 img").eq(0).width())*(oSize-1));
+				    		index = oSize-2;
+				    	}
+				    	$("#u2").stop().animate({"left":-($("#u2 img").eq(0).width())*index},2000);
+				    });
+				</script>
+				<div id="content">
+					<div id="content_left">
+						<h2><a href="javascript:;">more</a>小多推荐<span>Douna Sale</span></h2>
+						<ul id="content_dong">
+							<li>
+								<em></em>
+								<a href="javascript:;"><img src="img/main/content_1_img1.jpg" /></a>
+								<p>
+									<a href="javascript:;"><span>自然美(采韵居)美...</span></a>
+									还剩余<i>452</i>张
+								</p>
+							</li>
+							<li class="li2">
+								<em></em>
+								<a href="javascript:;"><img src="img/main/content_1_img2.jpg" /></a>
+								<p>
+									<a href="javascript:;"><span>自然美(采韵居)美...</span></a>
+									还剩余<i>452</i>张
+								</p>
+							</li>
+							<li class="li3">
+								<em></em>
+								<a href="javascript:;"><img src="img/main/content_1_img3.jpg" /></a>
+								<p>
+									<a href="javascript:;"><span>自然美(采韵居)美...</span></a>
+									还剩余<i>452</i>张
+								</p>
+							</li>
+							<li class="li4">
+								<em></em>
+								<a href="javascript:;"><img src="img/main/content_1_img4.jpg" /></a>
+								<p>
+									<a href="javascript:;"><span>自然美(采韵居)美...</span></a>
+									还剩余<i>452</i>张
+								</p>
+							</li>
+							<li class="clea">
+								<em></em>
+								<a href="javascript:;"><img src="img/main/content_1_img5.jpg" /></a>
+								<p>
+									<a href="javascript:;"><span>自然美(采韵居)美...</span></a>
+									还剩余<i>452</i>张
+								</p>
+							</li>
+						</ul>
+					</div>
+					<div id="content_right">
+						<img src="img/main/hot6.png" />
+						<img src="img/main/hot7.png" class="map_more" />
+					</div>
+				</div>
+				<div class="content_c1">
+					<div class="tit">
+						<a class="more" href="javascript:;">更多</a>
+						<p class="p1">
+							<span>餐饮美食</span>
+							Food and Drink
+						</p>
+						<p class="p2">
+							<span>热门推介:</span>
+							<a href="javascript:;">小吃快餐</a>
+							<a href="javascript:;" class="red">蛋糕甜品</a>
+							<a href="javascript:;">西餐</a>
+							<a href="javascript:;" class="red">日韩料理</a>
+							<a href="javascript:;">地方菜</a>
+							<a href="javascript:;" class="red">海鲜</a>
+							<a href="javascript:;">烧烤</a>
+							<a href="javascript:;" class="red">火锅</a>
+							<a href="javascript:;">自助餐</a>
+						</p>
+					</div>
+					<ul>
+						<li class="first">
+							<p class="top"><span>2598</span>剩余:861</p>
+							<a href="javascript:;"><img src="img/main/content_food1.jpg" /></a>
+							<p class="bottom">
+								<span>湘妃楼消费满100元减15元</span>
+								<a href="javascript:;">返利6.8元</a>
+								面值:<b>15</b>元
+							</p>
+						</li>
+						<li>
+							<p class="top"><span>2598</span>剩余:861</p>
+							<a href="javascript:;"><img src="img/main/content_food2.jpg" /></a>
+							<p class="bottom">
+								<span>湘妃楼消费满100元减15元</span>
+								<a href="javascript:;">返利6.8元</a>
+								面值:<b>15</b>元
+							</p>
+						</li>
+						<li>
+							<p class="top"><span>2598</span>剩余:861</p>
+							<a href="javascript:;"><img src="img/main/content_food3.jpg" /></a>
+							<p class="bottom">
+								<span>湘妃楼消费满100元减15元</span>
+								<a href="javascript:;">返利6.8元</a>
+								面值:<b>15</b>元
+							</p>
+						</li>
+						<li>
+							<p class="top"><span>2598</span>剩余:861</p>
+							<a href="javascript:;"><img src="img/main/content_food4.jpg" /></a>
+							<p class="bottom">
+								<span>湘妃楼消费满100元减15元</span>
+								<a href="javascript:;">返利6.8元</a>
+								面值:<b>15</b>元
+							</p>
+						</li>
+						<li class="last">
+							<h4>餐饮美食·排行榜<span>[2元]印度餐厅(满100元可用)</span></h4>
+							<input type="text" />
+							<p>
+								<a href="javascript:;">[2元]赤岗川菜馆(满100元可用)</a><br />
+								<a href="javascript:;">[2元]赤岗川菜馆(满100元可用)</a><br />
+								<a href="javascript:;">[2元]赤岗川菜馆(满100元可用)</a><br />
+								<a href="javascript:;">[2元]赤岗川菜馆(满100元可用)</a><br />
+							</p>
+						</li>
+					</ul>
+					<div class="tit tit2">
+						<a class="more" href="javascript:;">更多</a>
+						<p class="p1">
+							<span>休闲娱乐</span>
+							Recreation
+						</p>
+						<p class="p2">
+							<a>热门推介:</a>
+							<a href="javascript:;">景点/郊游</a>
+							<a href="javascript:;" class="red">摄影</a>
+							<a href="javascript:;">电影</a>
+							<a href="javascript:;" class="red">运动健身</a>
+							<a href="javascript:;">棋牌</a>
+							<a href="javascript:;" class="red">桌球</a>
+							<a href="javascript:;">酒吧</a>
+							<a href="javascript:;" class="red">咖啡茶馆</a>
+							<a href="javascript:;">ktv</a>
+							<a href="javascript:;">酒店</a>
+						</p>
+					</div>
+					<ul class="second">
+						<li class="first">
+							<p class="top"><span>2598</span>剩余:861</p>
+							<a href="javascript:;"><img src="img/main/content_food1.jpg" /></a>
+							<p class="bottom">
+								<span>湘妃楼消费满100元减15元</span>
+								<a href="javascript:;">返利6.8元</a>
+								面值:<b>15</b>元
+							</p>
+						</li>
+						<li>
+							<p class="top"><span>2598</span>剩余:861</p>
+							<a href="javascript:;"><img src="img/main/content_food2.jpg" /></a>
+							<p class="bottom">
+								<span>湘妃楼消费满100元减15元</span>
+								<a href="javascript:;">返利6.8元</a>
+								面值:<b>15</b>元
+							</p>
+						</li>
+						<li>
+							<p class="top"><span>2598</span>剩余:861</p>
+							<a href="javascript:;"><img src="img/main/content_food3.jpg" /></a>
+							<p class="bottom">
+								<span>湘妃楼消费满100元减15元</span>
+								<a href="javascript:;">返利6.8元</a>
+								面值:<b>15</b>元
+							</p>
+						</li>
+						<li>
+							<p class="top"><span>2598</span>剩余:861</p>
+							<a href="javascript:;"><img src="img/main/content_food4.jpg" /></a>
+							<p class="bottom">
+								<span>湘妃楼消费满100元减15元</span>
+								<a href="javascript:;">返利6.8元</a>
+								面值:<b>15</b>元
+							</p>
+						</li>
+						<li class="last">
+							<h4>休闲娱乐·排行榜<span>[2元]印度餐厅(满100元可用)</span></h4>
+							<input type="text" />
+							<p>
+								<a href="javascript:;">[2元]赤岗川菜馆(满100元可用)</a><br />
+								<a href="javascript:;">[2元]赤岗川菜馆(满100元可用)</a><br />
+								<a href="javascript:;">[2元]赤岗川菜馆(满100元可用)</a><br />
+								<a href="javascript:;">[2元]赤岗川菜馆(满100元可用)</a><br />
+							</p>
+						</li>
+					</ul>
+					<div class="tit tit3">
+						<a class="more" href="#">更多</a>
+						<p class="p1">
+							<span>美容保健</span>
+							Recreation
+						</p>
+						<p class="p2">
+							<a>热门推介:</a>
+							<a href="javascript:;">美发</a>
+							<a href="javascript:;" class="red">化妆品</a>
+							<a href="javascript:;">瑜伽</a>
+							<a href="javascript:;" class="red">养生健身</a>
+							<a href="javascript:;">美甲</a>
+							<a href="javascript:;" class="red">美容spa</a>
+							<a href="javascript:;">足疗按摩</a>
+						</p>
+					</div>
+					<ul class="three">
+						<li class="first">
+							<p class="top"><span>2598</span>剩余:861</p>
+							<a href="javascript:;"><img src="img/main/content_food1.jpg" /></a>
+							<p class="bottom">
+								<span>湘妃楼消费满100元减15元</span>
+								<a href="javascript:;">返利6.8元</a>
+								面值:<b>15</b>元
+							</p>
+						</li>
+						<li>
+							<p class="top"><span>2598</span>剩余:861</p>
+							<a href="javascript:;"><img src="img/main/content_food2.jpg" /></a>
+							<p class="bottom">
+								<span>湘妃楼消费满100元减15元</span>
+								<a href="javascript:;">返利6.8元</a>
+								面值:<b>15</b>元
+							</p>
+						</li>
+						<li>
+							<p class="top"><span>2598</span>剩余:861</p>
+							<a href="javascript:;"><img src="img/main/content_food3.jpg" /></a>
+							<p class="bottom">
+								<span>湘妃楼消费满100元减15元</span>
+								<a href="javascript:;">返利6.8元</a>
+								面值:<b>15</b>元
+							</p>
+						</li>
+						<li>
+							<p class="top"><span>2598</span>剩余:861</p>
+							<a href="javascript:;"><img src="img/main/content_food4.jpg" /></a>
+							<p class="bottom">
+								<span>湘妃楼消费满100元减15元</span>
+								<a href="javascript:;">返利6.8元</a>
+								面值:<b>15</b>元
+							</p>
+						</li>
+						<li class="last">
+							<h4>餐饮美食·排行榜<span>[2元]印度餐厅(满100元可用)</span></h4>
+							<input type="text" />
+							<p>
+								<a href="javascript:;">[2元]赤岗川菜馆(满100元可用)</a><br />
+								<a href="javascript:;">[2元]赤岗川菜馆(满100元可用)</a><br />
+								<a href="javascript:;">[2元]赤岗川菜馆(满100元可用)</a><br />
+								<a href="javascript:;">[2元]赤岗川菜馆(满100元可用)</a><br />
+							</p>
+						</li>
+					</ul>
+					<div class="tit tit4">
+						<a class="more" href="javascript:;">更多</a>
+						<p class="p1">
+							<span>生活服务</span>
+							Recreation
+						</p>
+						<p class="p2">
+							<a>热门推介:</a>
+							<a href="javascript:;">汽车养护</a>
+							<a href="javascript:;" class="red">健康护理</a>
+							<a href="javascript:;">教育培训</a>
+							<a href="javascript:;" class="red">验光配镜</a>
+							<a href="javascript:;">服装箱包</a>
+							<a href="javascript:;" class="red">电子产品</a>
+							<a href="javascript:;">门票</a>
+						</p>
+					</div>
+					<ul class="four">
+						<li class="first">
+							<p class="top"><span>2598</span>剩余:861</p>
+							<a href="javascript:;"><img src="img/main/content_food1.jpg" /></a>
+							<p class="bottom">
+								<span>湘妃楼消费满100元减15元</span>
+								<a href="javascript:;">返利6.8元</a>
+								面值:<b>15</b>元
+							</p>
+						</li>
+						<li>
+							<p class="top"><span>2598</span>剩余:861</p>
+							<a href="javascript:;"><img src="img/main/content_food2.jpg" /></a>
+							<p class="bottom">
+								<span>湘妃楼消费满100元减15元</span>
+								<a href="javascript:;">返利6.8元</a>
+								面值:<b>15</b>元
+							</p>
+						</li>
+						<li>
+							<p class="top"><span>2598</span>剩余:861</p>
+							<a href="javascript:;"><img src="img/main/content_food3.jpg" /></a>
+							<p class="bottom">
+								<span>湘妃楼消费满100元减15元</span>
+								<a href="javascript:;">返利6.8元</a>
+								面值:<b>15</b>元
+							</p>
+						</li>
+						<li>
+							<p class="top"><span>2598</span>剩余:861</p>
+							<a href="javascript:;"><img src="img/main/content_food4.jpg" /></a>
+							<p class="bottom">
+								<span>湘妃楼消费满100元减15元</span>
+								<a href="javascript:;">返利6.8元</a>
+								面值:<b>15</b>元
+							</p>
+						</li>
+						<li class="last">
+							<h4>餐饮美食·排行榜<span>[2元]印度餐厅(满100元可用)</span></h4>
+							<input type="text" />
+							<p>
+								<a href="javascript:;">[2元]赤岗川菜馆(满100元可用)</a><br />
+								<a href="javascript:;">[2元]赤岗川菜馆(满100元可用)</a><br />
+								<a href="javascript:;">[2元]赤岗川菜馆(满100元可用)</a><br />
+								<a href="javascript:;">[2元]赤岗川菜馆(满100元可用)</a><br />
+							</p>
+						</li>
+					</ul>
+				</div>
+				<div id="content_list">
+					<ul>
+						<li>
+							<p>
+								<strong>多拿网</strong>
+								<a href="javascript:;">优惠券官方网站</a>
+							</p>
+							<div>
+								<a href="javascript:;">1.认识下品牌资源整合的六碳网</a><br />
+								<a href="javascript:;">2.广州2014年迎春花市开始的时间和地点</a><br />
+								<a href="javascript:;">3.广州一日游哪里好玩推荐</a><br />
+								<a href="javascript:;">4.广州好玩的地方</a><br />
+								<a href="javascript:;">5.广州自助餐美食介绍</a><br />
+								<a href="javascript:;"><span>more>></span></a>
+							</div>
+						</li>
+						<li>
+							<p>
+								<strong>代金卷</strong>
+								<a href="javascript:;">多拿网随机资讯</a>
+							</p>
+							<div>
+								<a href="javascript:;">1.广州的吃喝玩乐(五)</a><br />
+								<a href="javascript:;">2.广州市旅游景点推荐</a><br />
+								<a href="javascript:;">3.广州儿童写真团购哪里好?</a><br />
+								<a href="javascript:;">4.广州旅游团购</a><br />
+								<a href="javascript:;">5.广州一日游景点推荐</a>
+								<a href="javascript:;"><span>more>></span></a>
+							</div>
+						</li>
+						<li>
+							<p>
+								<strong>优惠券</strong>
+								<a href="javascript:;">多拿网最新推荐</a>
+							</p>
+							<div>
+								<a href="javascript:;">1.认识下品牌资源整合的六碳网</a><br />
+								<a href="javascript:;">2.广州2014年迎春花市开始的时间和地点</a><br />
+								<a href="javascript:;">3.多拿网是怎样消费的?</a><br />
+								<a href="javascript:;">4.线下返利概述</a><br />
+								<a href="javascript:;">5.线下返利网</a><br />
+								<a href="javascript:;"><span>more>></span></a>
+							</div>
+						</li>
+						
+					</ul>
+				</div>
+					<a href="javascript:;"><img class="foot_img" src="img/main/content_img_foot.jpg" /></a>
+			</div>
+		</div>
+		<div id="foot">
+			<footer>
+				<div class="f_t">
+					<div class="f_t_l">
+						<img src="img/lr/code.png">
+					</div>
+					<div class="f_t_l">
+						<h3>关注多拿网微博</h3>
+						<p>
+							<img src="img/lr/icon_sina.png">
+							<span>新浪微博</span>
+						</p>
+					</div>
+					<div class="f_t_c">
+						<ol>
+							<li><a>公司信息</a>
+								<ul>
+									<li><a href="javascript:;">联系我们</a></li>
+									<li><a href="javascript:;">关于我们</a></li>
+									<li><a href="javascript:;">加入我们</a></li>
+								</ul>
+							</li>
+							<li><a>商务合作</a>
+								<ul>
+									<li><a href="javascript:;">友情链接</a></li>
+									<li><a href="javascript:;">商家入驻</a></li>
+								</ul>
+							</li>
+							<li><a>玩转多拿网</a>
+								<ul>
+									<li><a href="javascript:;">免单消费</a></li>
+									<li><a href="javascript:;">返利优惠</a></li>
+									<li><a href="javascript:;">意见反馈</a></li>
+								</ul>
+							</li>
+							<li><a>用户帮助</a>
+								<ul>
+									<li><a href="javascript:;">多拿保障</a></li>
+									<li><a href="javascript:;">常见问题</a></li>
+									<li><a href="javascript:;">隐私声明</a></li>
+									<li><a href="javascript:;">用户协议</a></li>
+								</ul>
+							</li>
+						</ol>
+					</div>
+					<div class="f_t_r">
+						<img src="img/lr/phone.png">
+					</div>
+				</div>
+				<div class="f_b">
+					<p><img src="img/lr/logo_footer.png"></p>
+					<ul>
+						<li>版权所有<span>多拿网</span></li>
+						<li>Copyright 2012 All Rights Reserved.ICP经营许可证号：粤B2-20130162</li>
+						<li><img src="img/lr/icon_baidu.png"></li>
+					</ul>
+					<ol>
+						<li><a href="javascript:;">优惠券</a></li>
+						<li><a href="javascript:;">代金券</a></li>
+						<li><a href="javascript:;">优惠券的官方网站</a></li>
+					</ol>
+				</div>
+			</footer>
+		</div>
+		<script type="text/javascript">
+			$('.map_more').click(function(){
+				location.href = 'html/map.html';
+			})
+		</script>
+	</body>
+</html>

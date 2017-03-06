@@ -1,0 +1,227 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+#box{
+	width: 1000px;
+	height: 800px;
+	margin: 0px auto;
+}
+#title{
+	width: 100%;
+	height: 40px;
+	background-color: #DE1C0E;
+}
+#title a{
+	color: white;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	margin: 5px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 30px;
+}
+#title .now{
+	background-color: white;
+	color: red;	
+}
+#title a:hover{
+	background-color: white;
+	color: red;
+	cursor: pointer;
+}
+#content{
+	width: 100%;
+	height: 520px;
+	background-image: url(../img/login.jpg);
+	background-position: 0px -200px;
+}
+.logo{
+	width: 130px;
+	height: 60px;
+	margin: 15px 40px ;
+	float: left;
+}
+.text{
+	width: 280px;
+	height: 300px;
+	float: left;
+	margin-top: 100px;
+	margin-left: -100px;
+}
+#content_text{
+	width: 300px;
+	height: 350px;
+	background-color: white;
+	background: rgba(255,255,255,0.5);	/*让背景虚化但不影响内容*/
+	float: right;
+	margin-top: 60px;
+	margin-right: 140px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px 5px grey;
+	font-size: 12px;
+}
+#content_text h2{
+	margin-top: 15px;
+	text-align: center;
+}
+#content_text table{
+	margin-top: 30px;
+	margin-left: 10px;
+}
+#content_text table .td{
+	text-align: right;
+	width: 70px;
+	font-size: 16px;
+}
+#content_text table tr{
+	height: 50px;
+}
+#content_text table td{
+	vertical-align: top;	
+}
+#content_text table tr td input{
+	height: 22px;
+	width: 180px;
+	background-color: white;
+}
+#content_text table tr td p{
+	height: 20px;
+	line-height: 20px;
+	font-size: 10px;
+	color: grey;
+}
+#remember{
+	margin-left: 60px;
+	margin-top: 10px;
+}
+#recheck_num{
+	width: 90px;
+	border: 1px solid black;
+}
+#content_text a{
+	margin-left: 20px;
+	color: green;
+	cursor: pointer;
+}
+#login{
+	width: 200px;
+	height: 40px;
+	background-color: #D63226;
+	border-radius: 5px;
+	color: white;
+	font-weight: bold;
+	font-family: "微软雅黑";
+	letter-spacing: 20px;
+	margin-left: 50px;
+	margin-top: 10px;
+}
+.monkey{
+	width: 100px;
+	height: 100px;
+	float: right;
+	margin-top: -350px;
+	margin-right: -20px;
+}
+.insert{
+	width: 100%;
+	height: 4px;
+	background-color: #CC3333;
+}
+#foot{
+	width: 100%;
+	height: 236px;
+	background-color: #EEEEEE;
+	text-align: center;
+}
+.code{
+	width: 150px;
+	height: 150px;
+	border-right: 1px solid #A9A9A9;
+	text-align: center;
+	margin-top: 5px;
+	float: left;
+}
+.code img{
+	width: 100px;
+	height: 125px;
+	margin-top: 10px;
+}
+.code p{
+	font-family: "黑体";
+	font-size: 14px;
+	margin-top: 8px;	
+}
+.code .weibo{
+	width: 24px;
+	height: 22px;
+	margin-left: -60px;
+}
+.code .weibo_text{
+	font-family: "黑体";
+	font-size: 10px;
+	width: 60px;
+	margin-top: -18px;	
+	margin-left: 66px;
+}
+.code .weibo_text a:hover{
+	color: red;
+	cursor: pointer;	
+}
+.detail{
+	width: 440px;
+	height: 150px;
+	border-right: 1px solid #A9A9A9;
+	margin-top: 5px;
+	float: left;
+}
+.detail ul li{
+	list-style: none;
+	float: left;
+	width: 110px;
+	text-align: center;
+	margin-top: 5px;	
+}
+.detail ul li a{
+	font-family: "黑体";
+	font-size: 10px;	
+}
+.detail ul li a:hover{
+	color: red;
+	cursor: pointer;
+}
+.detail_text ul li{
+	font-family: "黑体";
+	font-size: 10px;
+	margin-top: 10px;
+}
+.phone{
+	width: 200px;
+	height: 150px;
+	text-align: center;
+	margin-top: 5px;
+	float: left;
+}
+.phone img{
+	width: 180px;
+	height: 150px;
+}
+.banquan{
+	font-family: "微软雅黑";
+	font-size: 10px;
+}
+.banquan img{
+	width: 12px;
+	height: 12px;
+}
+.banquan a{
+	color: grey;
+}
+.banquan a:hover{
+	color: red;
+	cursor: pointer;
+}

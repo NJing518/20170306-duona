@@ -1,0 +1,409 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-size:14px;
+}
+ul li,ol li{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+h1,h2,h3,h4,h5,h6,span,a{
+	text-align: center;
+}
+.forget_password:hover,.reg:hover{
+	color:red;
+}
+input{
+	outline: none;
+	color:#999;
+}
+header{
+	width:100%;
+	height:45px;
+	background-color:#de1c0d;
+	float:left;
+	overflow:hidden;
+}
+header ul{
+	float:right;
+}
+header ul li{
+	float:left;
+	padding: 0 25px;
+	border-radius:20px;
+	height:25px;
+	margin:10px 0;
+	overflow:hidden;
+}
+header ul li a{
+	line-height:25px;
+	color:white;
+	font-family: "微软雅黑";
+	font-weight:bold;
+}
+header ul li a:hover{
+	color:black;
+}
+.content{
+	width:100%;
+	height:740px;
+	float:left;
+	background-image: url(../img/lr/login.jpg);
+	overflow:hidden;
+}
+.content .c_l{
+	width:70%;
+	height:100%;
+	float:left;
+	overflow:hidden;
+}
+.content .c_l p{
+	margin:20px 0 0 50px;
+}
+.content .c_l .sub{
+	margin-left:120px;
+}
+.content .c_r{
+	width:30%;
+	height:100%;
+	float:left;
+	overflow:hidden;
+	position:relative;
+}
+.content .c_r img{
+	position:absolute;
+	left:200px;
+	top:20px;
+}
+.content .c_r .login{
+	height: 350px;
+	width:300px;
+	border:1px solid #666;
+	margin-top:130px;
+	border-radius:5px;
+	overflow:hidden;
+	background-color:rgba(255,255,255,0.3);
+}
+.content .c_r .login h2{
+	text-align:center;
+}
+.content .c_r .login p{
+	margin-top:20px;
+}
+.content .c_r .login span{
+	margin:5px 10px;
+	float:left;
+}
+.content .c_r .login p input{
+	float:right;
+	margin-right:30px;
+	height:20px;
+	width:180px;
+	color:#999;
+}
+.content .c_r .login p input[name="login_code"]{
+	width:80px;
+	float:right;
+	margin:0 20px 0 0;
+}
+.content .c_r .login .tips{
+	font-size:13px;
+	margin-left:30px;
+	color:#666;
+	float:none;
+}
+.content .c_r .login a{
+	display:block;
+	font-size:12px;
+	margin:0 0 -10px 220px;
+}
+.content .c_r .login p .s_code{
+	background:#000;
+	float:right;
+	width:50px;
+	height:25px;
+	color:white;
+	font-size:20px;
+	text-align:center;
+	margin:0 60px 0 0;
+}
+.content .c_r .login ul{
+	margin:30px 0 20px 70px;
+}
+.content .c_r .login ul li{
+	float:left;
+	font-size:12px;
+}
+.content .c_r .login ul li a{
+	margin:0;
+}
+.content .c_r .login ul li .reg{
+	margin-left:25px;
+}
+.content .c_r .login .l_login{
+	width:200px;
+	height:40px;
+	display:block;
+	background:#d43024;
+	float:left;
+	margin: 20px 50px;
+	line-height:40px;
+	text-align:center;
+	color:white;
+	font-size:15px;
+	font-weight:bold;
+	font-family:"微软雅黑";
+	border-radius:5px;
+}
+footer{
+	width:100%;
+	height:313px;
+	border-top:5px solid #cc3333;
+	float:left;
+	overflow:hidden;
+	background:#eee;
+}
+footer .f_t{
+	width:100%;
+	height:200px;
+	overflow:hidden;
+}
+footer .f_t .f_t_l{
+	width:20%;
+	height:190px;
+	margin-top:10px;
+	border-right:1px solid #999;
+	float:left;
+	overflow:hidden;
+}
+footer .f_t .f_t_l img{
+	margin:10px 0 0 70px;
+	overflow:hidden;
+}
+footer .f_t .f_t_l h3{
+	text-align:center;
+	margin:10px;
+	overflow:hidden;
+}
+footer .f_t .f_t_l p img{
+	float:left;
+	margin:0 10px 0 70px;
+	overflow:hidden;
+}
+footer .f_t .f_t_l p {
+	height:25px;
+	line-height:25px;
+}
+footer .f_t .f_t_l p span{
+	margin-top:50px;
+	font-size:14px;
+}
+footer .f_t .f_t_c{
+	width:40%;
+	height:190px;
+	float:left;
+	overflow:hidden;
+}
+footer .f_t .f_t_c ol{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+footer .f_t .f_t_c ol li{
+	float:left;
+	font-weight:bold;
+	list-style:none;
+	margin:15px 0 0 0px;
+	width:25%;
+	font-size:15px;
+	overflow:hidden;
+}
+footer .f_t .f_t_c ol li a{
+	margin-left:15px;
+}
+footer .f_t .f_t_c ol li ul li{
+	float:none;
+	margin:15px 0 0 0;
+	width:100%;
+	overflow:hidden;
+}
+footer .f_t .f_t_c ol li ul li a{
+	color:#555;
+	margin-left:15px;
+}
+footer .f_t .f_t_c ol li ul li a:hover{
+	color:red;
+}
+footer .f_t .f_t_r{
+	width:19%;
+	height:190px;
+	margin-top:10px;
+	border-left:1px solid #999;
+	float:left;
+	overflow:hidden;
+}
+footer .f_t .f_t_r img{
+	margin:0 auto;
+}
+footer .f_b{
+	width:100%;
+	height:113px;
+	overflow:hidden;
+	text-align:center;
+}
+footer .f_b p{
+	height:55px;
+	width:100%;
+	overflow:hidden;
+}
+footer .f_b span{
+	color:red;
+	font-size:12px;
+	margin:0 5px;
+}
+footer .f_b ul{
+	margin-left:20%;
+	float:left;
+}
+footer .f_b ol{
+	float:left;
+}
+footer .f_b ul li{
+	float:left;
+	font-size:12px;
+	height:20px;
+	line-height:20px;
+	overflow:hidden;
+}
+footer .f_b ol li{
+	float:left;
+	font-size:12px;
+	height:20px;
+	line-height:20px;
+	margin:0 5px;
+}
+footer .f_b ol li a{
+	color:#666;
+}
+footer .f_b ol li a:hover{
+	color:red;
+}
+/*register*/
+.content .re_c_l{
+	width:30%;
+	height:400px;
+	overflow: hidden;
+	float:left;
+	background-color:rgba(255,255,255,0.3);
+	border:1px solid #666;
+	box-shadow: 00 0 1px 1px;
+	margin:5% 0 0 6%;
+	border-radius: 10px;
+	border-top:3px solid red;
+}
+.content .re_c_l h2{
+	margin-top:10px;
+}
+.content .re_c_l p{
+	font-size:22px;
+	margin:10px 0;
+	height:30px;
+}
+.content .re_c_l p a{
+	margin-left:30px;
+}
+.content .re_c_l p span{
+	float:right;
+	margin-right:40px;
+}
+.content .re_c_l p span a{
+	color:blue;
+	font-weight:bold;
+}
+.content h1{
+	font-size:150px;
+	position:absolute;
+	top: 350px;
+	left:10%;
+	font-family: "宋体";
+	letter-spacing: 6px;
+}
+.content .re_c_r{
+	width:40%;
+	height:500px;
+	overflow: hidden;
+	float:right;
+	background-color:rgba(255,255,255,0.3);
+	border:1px solid #666;
+	box-shadow: 0 0 1px 1px;
+	margin:5% 10% 0 0;
+	border-radius: 10px;
+	border-top:3px solid red;
+}
+.content .re_mon{
+	margin:2% 0 0 -1.5%;
+}
+.content .re_c_r h2{
+	text-align: left;
+	margin:8% 0 0 8%;
+
+}
+.content .re_c_r input{
+	height:40px;
+	width:380px;
+	margin:3% 0 0 8%;
+	border-radius:10px;
+}
+.content .re_c_r input[name="code"]{
+	width:240px;
+	float:left;
+}
+.content .re_c_r input[name="get"]{
+	width:120px;
+	margin:3% 0 0 4%;
+	float:left;
+	border:1px solid #f00;
+	background-color:#fff;
+	cursor: pointer;
+	font-size:14px;
+	color:red;
+}
+.content .re_c_r p{
+	height:40px;
+	width:380px;
+	margin:7% 0 0 8%;
+	font-size:20px;
+}
+.content .re_c_r p a{
+	color:red;
+	font-size:14px;
+}
+.content .re_c_r .reg{
+	width:380px;
+	height:40px;
+	display: block;
+	text-align: center;
+	font-size:20px;
+	line-height: 40px;
+	background:#ce3a00;
+	margin:3% 0 0 8%;
+	color:white;
+}
+.content .re_c_r span{
+	width:380px;
+	height:40px;
+	display: block;
+	text-align: center;
+	font-size:20px;
+	line-height: 40px;
+	margin:3% 0 0 8%;
+	color:red;
+}
+.life_search{
+	background-color: #F3F3F3;
+}
+

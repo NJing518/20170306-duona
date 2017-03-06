@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>生活服务</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+	<link href="../css/index.css" type="text/css" rel="stylesheet"/>
+	<link href="../style/style.css" type="text/css" rel="stylesheet"/>
+	<script type="text/javascript" src="../js/jquery-2.1.0.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/index.js"></script>
+	<script>
+		$(function(){
+			$('.life_li1 li a').click(function(){
+				$(this).addClass('life_c_t_r_hover').parent().siblings().children().removeClass('life_c_t_r_hover');
+			});
+			$('.life_c_t_r_t4 li').click(function(){
+				console.log(0);
+				$(this).addClass('life_c_t_r_hover2').siblings().removeClass('life_c_t_r_hover2');
+			});
+			$.ajax({
+				url:'../json/life.json',
+				type:'get',
+				dataType:'json',
+				success:function(data){
+					console.log(data.data[0].heart);
+					if(data.ret){
+						$.each(data.data,function(i,val){
+							$('<li><p class="tra_sub_b_p1"><img src="../img/tra/main_heart.png"><a>'+data.data[i].heart+'</a><span>剩余：'+
+							data.data[i].surplus+'</span></p><a href="javascript:;"><img src="'+data.data[i].img+
+							'"></a><p class="tra_sub_b_p2"><a href="javascript:;">'+data.data[i].name+
+							'</a></p><p class="tra_sub_b_p3"><a>面值：<span>'+data.data[i].price+'</span>元</a><input type="button" name="sales" value="返利'+
+							data.data[i].sale+'元"></p></li>').appendTo(".life_show ul");
+						});
+					}
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="life_ad">
+		<a href="javascript:;"><img src="../img/life/life_ad.gif"></a>
+	</div>
+	<header class="life_t">
+		<ul>
+			<li>[<a href="denglu.html">登录</a>]</li>
+			<li>[<a href="zhuce.html">注册</a>]</li>
+		</ul>
+		<ol>
+			<li><a href="javascript:;">我的多拿</a></li>
+			<li class="life_shop"><a href="gouwuche.html">购物车</a></li>
+			<li class="life_col"><a href="javascript:;">收藏多拿</a></li>
+			<li><a href="javascript:;">入驻多拿</a></li>
+			<li><a href="javascript:;">帮助</a></li>
+		</ol>
+	</header>
+	<div class="life_search">
+		<img src="../img/life/life_logo_l.gif" alt="多拿网">
+		<div class="life_search_c">
+			<p class="life_search_c_t">
+				<input type="text" name="life_search" placeholder="Hello World!">
+				<a href="javascript:;" class="life_search_a"></a>
+			</p>
+			<p class="life_search_c_b">
+				<a href="javascript:;" style="margin-left:22%;">LEVEL.A发廊</a>
+				<a href="javascript:;" style="color:red;">奈莉尔美容院</a>
+				<a href="javascript:;">花之生活馆</a>
+			</p>
+		</div>
+		<img src="../img/life/life_logo_r.png" alt="多拿网" class="life_search_i_r">
+	</div>
+	<div id="nav">
+		<ul>
+			<li class="li1"><a href="javascript:;">代金卷分类<span class="caret"></span></a></li>
+			<li class="clear_l"><a href="../index.html">首页</a></li>
+			<li><a href="tasty.html">餐饮美食</a></li>
+			<li><a href="content.html">休闲娱乐</a></li>
+			<li><a href="bodybuilding.html">美容保健</a></li>
+			<li class="clear_r">
+				<a href="life.html" style="color: #de1d0e;background: #fff;border-radius:15px">生活服务</a>
+			</li>
+		</ul>
+		<img src="../img/lr/monkey.png"/>
+	</div>
+	<h3 class="life_t_brand">品牌索引</h3>
+	<div class="life_c_t">
+		<div class="life_c_t_l">
+			<strong class="life_c_t_l_title">热门商家：</strong>
+			<p class="life_c_t_l_cla_t">
+				<a href="javascript:;">自然美(采韵居)</a>
+				<a href="javascript:;">美容养生馆</a>
+				<a href="javascript:;">海豚湾美甲</a>
+				<a href="javascript:;">陕川味道</a>
+				<a href="javascript:;">博密思</a>
+				<a href="javascript:;">芊艺菜</a>
+			</p>
+			<strong class="life_c_t_l_title">按字母排序：</strong>
+			<p class="life_c_t_l_cla_b">
+				<a href="javascript:;">A</a>
+				<span>-</span>
+				<a href="javascript:;">B</a>
+				<span>-</span>
+				<a href="javascript:;">C</a>
+				<span>-</span>
+				<a href="javascript:;">D</a>
+				<span>-</span>
+				<a href="javascript:;">E</a>
+				<span>-</span>
+				<a href="javascript:;">F</a>
+				<span>-</span>
+				<a href="javascript:;">G</a>
+				<span>-</span>
+				<a href="javascript:;">H</a>
+				<span>-</span>
+				<a href="javascript:;">I</a>
+				<span>-</span>
+				<a href="javascript:;">J</a>
+				<span>-</span>
+				<a href="javascript:;">K</a>
+				<span>-</span>
+				<a href="javascript:;">L</a>
+				<span>-</span>
+				<a href="javascript:;">M</a>
+				<span>-</span>
+				<a href="javascript:;">N</a>
+				<span>-</span>
+				<a href="javascript:;">O</a>
+				<span>-</span>
+				<a href="javascript:;">P</a>
+				<span>-</span>
+				<a href="javascript:;">Q</a>
+				<span>-</span>
+				<a href="javascript:;">R</a>
+				<span>-</span>
+				<a href="javascript:;">S</a>
+				<span>-</span>
+				<a href="javascript:;">T</a>
+				<span>-</span>
+				<a href="javascript:;">U</a>
+				<span>-</span>
+				<a href="javascript:;">V</a>
+				<span>-</span>
+				<a href="javascript:;">W</a>
+				<span>-</span>
+				<a href="javascript:;">Y</a>
+				<span>-</span>
+				<a href="javascript:;">Z</a>
+			</p>
+
+		</div>
+		<div class="life_c_t_r">
+			<ul class="life_c_t_r_t1 life_li1">
+				<span>分类：</span>
+				<li><a href="javascript:;" class="life_c_t_r_hover">全部</a></li>
+				<li><a href="javascript:;">电子产品(4)</a></li>
+				<li><a href="javascript:;">服装箱包(3)</a></li>
+				<li><a href="javascript:;">健康护理(8)</a></li>
+			</ul>
+			<ul class="life_c_t_r_t2 life_li1">
+				<span>区域：</span>
+				<li><a href="javascript:;" class="life_c_t_r_hover">全部</a></li>
+				<li><a href="javascript:;">越秀区(4)</a></li>
+				<li><a href="javascript:;">海珠区(6)</a></li>
+				<li><a href="javascript:;">天河区(5)</a></li>
+			</ul>
+			<ul class="life_c_t_r_t3 life_li1">
+				<span>面额：</span>
+				<li><a href="javascript:;" class="life_c_t_r_hover">全部</a></li>
+				<li><a href="javascript:;">50元以下(8)</a></li>
+				<li><a href="javascript:;">50-100元(2)</a></li>
+				<li><a href="javascript:;">100-200元(1)</a></li>
+				<li><a href="javascript:;">200-500元(3)</a></li>
+				<li><a href="javascript:;">500元以上(1)</a></li>
+			</ul>
+			<ul class="life_c_t_r_t4">
+				<li class="life_c_t_r_hover2"><a href="javascript:;">默认排序</a></li>
+				<li><a href="javascript:;">销量</a></li>
+				<li><a href="javascript:;">面额</a></li>
+				<li><a href="javascript:;">发布时间</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="life_show">
+		<ul>
+		</ul>
+		
+	</div>
+	<footer>
+		<div class="f_t">
+			<div class="f_t_l">
+				<img src="../img/lr/code.png">
+			</div>
+			<div class="f_t_l">
+				<h3>关注多拿网微博</h3>
+				<p>
+					<img src="../img/lr/icon_sina.png">
+					<span>新浪微博</span>
+				</p>
+			</div>
+			<div class="f_t_c">
+				<ol>
+					<li><a>公司信息</a>
+						<ul>
+							<li><a href="javascript:;">联系我们</a></li>
+							<li><a href="javascript:;">关于我们</a></li>
+							<li><a href="javascript:;">加入我们</a></li>
+						</ul>
+					</li>
+					<li><a>商务合作</a>
+						<ul>
+							<li><a href="javascript:;">友情链接</a></li>
+							<li><a href="javascript:;">商家入驻</a></li>
+						</ul>
+					</li>
+					<li><a>玩转多拿网</a>
+						<ul>
+							<li><a href="javascript:;">免单消费</a></li>
+							<li><a href="javascript:;">返利优惠</a></li>
+							<li><a href="javascript:;">意见反馈</a></li>
+						</ul>
+					</li>
+					<li><a>用户帮助</a>
+						<ul>
+							<li><a href="javascript:;">多拿保障</a></li>
+							<li><a href="javascript:;">常见问题</a></li>
+							<li><a href="javascript:;">隐私声明</a></li>
+							<li><a href="javascript:;">用户协议</a></li>
+						</ul>
+					</li>
+				</ol>
+			</div>
+			<div class="f_t_r">
+				<img src="../img/lr/phone.png">
+			</div>
+		</div>
+		<div class="f_b">
+			<p><img src="../img/lr/logo_footer.png"></p>
+			<ul>
+				<li>版权所有<span>多拿网</span></li>
+				<li>Copyright 2012 All Rights Reserved.ICP经营许可证号：粤B2-20130162</li>
+				<li><img src="../img/lr/icon_baidu.png"></li>
+			</ul>
+			<ol>
+				<li><a href="javascript:;">优惠券</a></li>
+				<li><a href="javascript:;">代金券</a></li>
+				<li><a href="javascript:;">优惠券的官方网站</a></li>
+			</ol>
+		</div>
+	</footer>
+</body>
+</html>

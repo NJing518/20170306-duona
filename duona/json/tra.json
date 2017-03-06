@@ -1,0 +1,32 @@
+{
+  "ret": true,
+  "errorCode": 0,
+  "errorMsg": "",
+  "data": [
+    {
+      "title" : "LEVEL.A发廊染发套餐",
+      "img": "../img/tra/tra_null_b1.gif",
+      "price":"302",
+      "back":"10.08"
+      
+    },
+    {
+      "title" : "汰渍去渍霸薰衣草洗衣粉2kg",
+      "img": "../img/tra/tra_null_b2.gif",
+      "price":"114",
+      "back":"2.72"
+    },
+    {
+      "title" : "古凌山超厚苏打饼干1kg",
+      "img": "../img/tra/tra_null_b3.gif",
+      "price":"338",
+      "back":"16.8"
+    },
+    {
+      "title" : "雨森春意盎然卫生纸2000g",
+      "img": "../img/tra/tra_null_b4.gif",
+      "price":"2",
+      "back":"8"
+    }
+  ]
+}
